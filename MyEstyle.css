@@ -1,0 +1,88 @@
+html{
+    font-family: 'Poppins',sans-serif;
+    background:linear-gradient(177deg,orange,green);
+}
+body{
+    max-width: 1000px;
+    margin:30px auto;
+    padding:30px;
+    background:whitesmoke;
+    border-radius: 20px;
+    border:none;
+    box-shadow: 0 15px 40px blueviolet;
+    animation: aparecer 1s ease-in-out;
+    animation: entrarDesdeDerecha 2s ease-out forwards;
+    h1{
+        font-size: 54px;
+        text-align: center;
+        color: rgb(228,76,36);
+        text-shadow: 3px 3px 10px brown;
+        transition: 0.3s ease;
+    }
+    h2{
+        font-size: 25px;
+        color:rgb(228,76,36);
+        border-left: 6px solid brown;
+        padding-left: 10px;
+        transition: border color 0.3s ease;
+    }
+    p,li{
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: justify;
+        color:#444;
+    }
+    img{
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px black;
+        transition: 0.4s ease;
+    }
+    iframe{
+        display: block;
+        margin: 20px auto;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px ;
+    }
+    a{
+        color:brown;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    h1:hover{
+        transform: scale(1.1);
+    }
+
+}
+img:hover{
+    transform: scale(1.03) rotate(1deg);
+}
+a:hover{
+    color: rgb(212, 135, 135);
+    text-decoration: underline;
+}
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transition: translateY(0);;
+    }
+}
+@keyframes entrarDesdeDerecha{
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transition: translateX(0);
+    }
+}
+h2:hover{
+    border-left-color: green;
+}
